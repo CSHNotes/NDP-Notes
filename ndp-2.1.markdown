@@ -62,3 +62,42 @@
     * maintenance cost
     * product life cycles
 * Fits corporate network environments
+
+## Discussing technical priorities
+### Scalability
+* Ability to grow
+* Some technologies do not grow well
+    * Flat networks do not scale well
+* Try to learn
+    * Number of sites
+    * Needs of sites
+    * How man users
+    * Number of servers
+    * Additional external services
+    * Additional internal services
+    * Expected growth
+### Availability
+Can be expressed as a percent uptime per year, month, week, day or hour 
+compared to the total time in that period
+
+Avoiding downtime:
+* Redundancy
+* Resiliency - how much stress the network can handle
+
+Can also be expressed in terms of mean time between failure and mean time to 
+repair
+* Availability = MTBF/(MTBF + MTTR)
+* MTBF = average time between failures
+* MTTR = average time it takes to repair
+
+Disaster recovery
+* need to sustain business after a disaster
+* what do you need to think about?
+* testing
+
+### Performance
+### Security
+### Manageability
+### Usability
+### Adaptability
+### Affordability
