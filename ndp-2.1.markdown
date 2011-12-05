@@ -7,9 +7,9 @@
 
 ## Meeting with customer
 ###Concise statement of the goals
-    * what are they trying to solve?
-    * how will new tech help?
-    * what must happen for the project to succeed?
+* what are they trying to solve?
+* how will new tech help?
+* what must happen for the project to succeed?
 
 ### Contingency planning!
 * critical?
