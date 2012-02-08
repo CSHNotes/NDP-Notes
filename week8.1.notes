@@ -1,0 +1,129 @@
+# Routing Protocols
+
+## Features
+* State versus dynamic routing
+* Interior versus exterior routing protocols
+* Distance vector vs link-state versus hybrid
+* Routing protocol metrics
+* Routing protocol convergence
+* Flat vs hierarchical routing protocols
+
+# Static vs Dynamic
+## Static
+* use of manually configuring or injected static routes for traffic forwarding
+* uses
+	* dial-up link
+	* total control needed
+	* backup to dynamic route
+	* stub network
+
+## Dynamic
+* find sources from which routing information can be received
+* select best paths
+* maintain information
+* means of verifiying
+
+# Interior vs Exterior
+* Inter-AS connections require more options for manual selection of routing characteristics. EGPs should be able to implement various policies
+* Speed of convergence and finding the best path to destination are crucial for intra-AS routing protocols
+
+# Distance vector vs Link state vs Hybrid
+* Distance vector: hop by hop
+	* typically slow to converge and doesn't scale
+	* easy to implement and maintain
+	* RIP, RIPv2, IGRP
+* Link state: each router makes its own routing decision
+* Hybrid: has both (EIGRP)
+	* Fast converging and scalable routing protocol
+
+# Flat vs Hierarchical
+* Flat routing protocols propagate all routing information throughout the network, whereas hierarchical routing protocols divide large networks in smaller areas
+* Flat routing protocols
+	* classful distance vector protocols
+	* RIP
+* Hierarchical
+	* classless link state
+	* OSPF, ISIS, EIGRo
+
+# EIGRP
+* Cisco-proprietary hybrid
+* Performs triggered updates
+* Well suited to all environments
+* Not suitable for dial-up - keepalive packets
+
+# OSPF
+* standards based link state
+* initially designed for ptp links
+* OSPF can be used for dialup - can suppress keepalive
+
+# Routing in Campus Core
+* EIGRP and OSPF both adapt quickly to changes and have short convergence times. Suitable for core
+* decision should be based on underlying topology, IP addressing, equipment and possible issues
+## OSPF
+* OSPF imposes strict hierarchical
+* OSPF should map to IP addressing
+## EIGRP
+* EIGRP restructs vendor selection
+* Can use EIGRP in core and OSPF otherwise
+## DO NOT USE
+* ISIS is not widely available
+* RIP transfers entire table - slow convergence
+* Static routing is a bitch
+
+# Routing in Distribution
+* Use same protocol everywhere
+* EIGRP and OSPF
+
+# Routing in Access Layer
+* Topology, addressing scheme, available processing power and memory influence
+* OSPF and EIGRP
+
+# Network Security Policy
+* RFC2196
+	* Basic set of guidelines
+
+## Approach
+* Identify what you're trying to protect
+* What are you trying to protect from
+* How likely are threats
+* Implement measures to protect assets cost effectively
+* Review continually and improve
+
+## Creation Participants
+* Site security administrator
+* IT staff
+* Administrators of user groups
+* Security incident response team
+* Representatives of user groups
+* Responsible Magangement
+* Legal counsel
+
+## Trade-offs
+* Services offered versus security provided
+* Ease of use vs security
+* Cost of security vs risk of loss
+
+## Characteristics
+* Implementable via administration
+* Enforcible with tools/sanctions
+* Clearly defined responsibility for all involved
+
+## Components
+* Purchasing Guidelines
+* Privacy
+* Access
+* Accountability
+* Authentication
+* Maintenance
+* Reporting
+* Contact
+* Flexibility
+
+## Approaches
+* Separation of services
+* Deny all / Allow all
+* Identify needs
+* Protect the hosts
+* Protect the network
+* Strong passwords
+* Securing system passwords
