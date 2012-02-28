@@ -1,6 +1,7 @@
 # Network Design
 
 Two basic designs:
+
 * Top down
 * Bottom up
 
@@ -8,6 +9,7 @@ Selection depends on the circumstances. Bottom-up is perfect for small changes o
 more permanent, larger networks where you're not altogether clear on the customer's needs prior to designing the network.
 
 ## Bottoms up!
+
 * Establish where connectivity is needed
 * Design
 * Configure
@@ -15,6 +17,7 @@ more permanent, larger networks where you're not altogether clear on the custome
 Bottoms up is significantly quicker than a top down approach
 
 ## Top Down
+
 * Establish what applications are needed
 * Identify customer needs, goals and constraints
 * Determine traffic patterns, protocols and device config
@@ -26,7 +29,9 @@ Top down is an approach in which customer needs and constraints are the focus of
 It should maatch business needs to current technology.
 
 ### Customer goals
+
 Must be considered before designing a network
+
 * Scalability
     * Can the network expand with the business?
 * Capability
@@ -47,6 +52,7 @@ Must be considered before designing a network
     * Can future netadmins support the network easily?
 
 ### Business goals
+
 * Increase revenue
 * Reduce operating costs
 * Improve communications
@@ -56,6 +62,7 @@ Must be considered before designing a network
 * Offer better customer support and services
 
 ### Business priorities
+
 * Mobility
 * Security
 * Resiliency
